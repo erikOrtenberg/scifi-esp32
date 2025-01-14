@@ -36,7 +36,7 @@ def mPrintHelper(t):
     global animIteration
     global output
     if animIteration <= animLength:
-        if animIteration <= len(strToPrint):
+        if animIteration < len(strToPrint):
             ## LOADING ANIM
             rand = random.getrandbits(8)/2**8
             char = charset[floor(rand*len(charset))]
